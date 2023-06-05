@@ -3,18 +3,15 @@
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 */
 
-const a = "Ci siamo!"
-const b = "Il gatto fa miao!!"
-
 const saluto = function(a,b){
   const aChar = a.slice(0,2)
-  const bChar = b.slice(-4,-1)
+  const bChar = b.slice(-3)
   const maiuscolo = aChar.toUpperCase()+bChar.toUpperCase()
   console.log(maiuscolo)
   return
 }
 
-saluto(a,b)
+saluto("Ci siamo!","Il gatto fa miao!")
 
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
@@ -49,7 +46,7 @@ console.log(numeriPari)                               // stampato il filtro
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
-
+// ??????
 
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
@@ -64,13 +61,7 @@ console.log(total)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
 
-const n = 5
-
-const addN = numeri.map((numeri) => {
-
-})
-
-console.log(addN)
+// ????
 
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
