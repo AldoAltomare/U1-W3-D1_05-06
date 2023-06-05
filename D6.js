@@ -46,14 +46,20 @@ console.log(numeriPari)                               // stampato il filtro
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
-// ??????
+
+const tot = numeri.forEach(function(tot,current){
+  
+  return tot += current
+})
+
+console.log(tot)
 
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
-const total = numeri.reduce((total,singleNumber) => {
-    return total + singleNumber
+const total = numeri.reduce((total,current) => {
+    return total + current
 })
 console.log(total)
 
@@ -61,7 +67,8 @@ console.log(total)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
 
-// ????
+const arr = [1,2,3]
+const n = 5
 
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
@@ -74,7 +81,16 @@ console.log(total)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
 
-
+// const justDispari = function(){
+//   let dispari = []
+// for (let i = 0, i<100, i++){
+//   if(i%2 !== 0) {
+//     dispari.push(i)
+//   }
+// }
+// return dispari
+// }
+// console.log(justDispari())
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
@@ -195,6 +211,17 @@ const movies = [
 /* ESERCIZIO 9 (forEach)
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
+
+
+let min = 2023
+let title = ''
+movies.forEach((old) => {
+  if(Number(old.Year) < min){
+    min = Number(old.Year)
+    title = old.Title
+  }
+})
+console.log(title)
 
 
 "occhio anni in stringa"
